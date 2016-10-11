@@ -1,0 +1,44 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xml:lang="en-US"
+	x:Class="BlendProject1.GetAddresses"
+	x:Name="Window"
+	Title="Window"
+	Width="640" Height="480" xmlns:d="http://schemas.microsoft.com/expression/blend/2006" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d">
+
+	<Window.Resources>
+		<XmlDataProvider d:IsDataSource="True" Source="C:\Users\Laurence\Desktop\WebNextBook\Part02\Chapter08\BlendProject1\addressexample.xml" x:Key="Addresses" x:Name="Addresses"/>
+		<DataTemplate x:Key="AddressTemplate1">
+			<StackPanel>
+				<TextBlock Text="{Binding Mode=OneWay, XPath=AddressLine1}"/>
+				<TextBlock Text="{Binding Mode=OneWay, XPath=PostalCode}"/>
+				<Label Content=" " Height="8" />
+			</StackPanel>
+		</DataTemplate>
+		<Storyboard x:Key="OnClick1">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="listBox" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-302"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="3"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="listBox" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="9"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="10"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="listBox" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</Window.Resources>
+
+
+
+	<Grid x:Name="LayoutRoot" DataContext="{Binding Mode=Default, Source={StaticResource Addresses}, XPath=/DocumentElement/Address}">
+		<TextBox x:Name="tZIP" HorizontalAlignment="Left" Margin="23,18,0,0" VerticalAlignment="Top" Width="156" Height="23" Text="TextBox" TextWrapping="Wrap"/>
+		<Button Click="Handle_Click" HorizontalAlignment="Left" Margin="200,18,0,0" VerticalAlignment="Top" Width="67" Height="23" Content="Button" x:Name="button"/>
+		<ListBox HorizontalAlignment="Left" Margin="23,45,0,0" VerticalAlignment="Top" Width="244" Height="149" ItemTemplate="{DynamicResource AddressTemplate1}" ItemsSource="{Binding Mode=OneWay}" IsSynchronizedWithCurrentItem="True" RenderTransformOrigin="0.5,0.5" x:Name="listBox">
+		</ListBox>
+		<Label Margin="267,0,230,105" VerticalAlignment="Bottom" Height="45" Content="Label"/>
+	</Grid>
+</Window>

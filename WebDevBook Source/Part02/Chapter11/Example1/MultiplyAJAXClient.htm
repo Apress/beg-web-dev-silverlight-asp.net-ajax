@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>AJAX Multiplier Client</title>
+    <script type="text/javascript">
+    var ajaxRequest
+    function initAJAX()
+    {
+        
+        try
+        {
+            ajaxRequest = new XMLHttpRequest();
+        }
+        catch(error)
+        {
+            ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+    }
+    function handleInput()
+        {
+            var T1 = document.getElementById("Text1");
+            var T2 = document.getElementById("Text2");
+            var theURL = "MultiplyAJAXServer.aspx?nx=" + T1.value + "&ny=" + T2.value;
+            
+            ajaxRequest.open("GET", theURL);
+            ajaxRequest.onreadystatechange = handleUpdate;
+            ajaxRequest.send();
+        }
+     
+     function handleUpdate()
+     {
+        alert(ajaxRequest.readyState);
+        var ansDiv = document.getElementById("ans");
+        if(ajaxRequest.readyState == 4)
+        {
+            ansDiv.innerHTML = ajaxRequest.responseText;
+        }
+     }
+    
+    
+    </script>
+</head>
+<body onload="initAJAX();">
+    <div>First &nbsp; &nbsp; &nbsp;<input id="Text1" type="text" onkeyup="handleInput();" /><br /></div>
+    <div>Second
+        <input id="Text2" type="text" onkeyup="handleInput();"/><br /><br /></div>
+    <div id="ans">Answer</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+.\bin\Debug\FirstWorkflowApp.exe
+.\bin\Debug\FirstWorkflowApp.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\FirstWorkflowApp.exe
+obj\Debug\FirstWorkflowApp.pdb

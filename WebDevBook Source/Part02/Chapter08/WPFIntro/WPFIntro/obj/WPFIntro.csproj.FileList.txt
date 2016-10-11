@@ -1,0 +1,12 @@
+.\bin\Debug\WPFIntro.exe
+.\bin\Debug\WPFIntro.pdb
+obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Laurence\Desktop\WebNextBook\Part02\Chapter08\WPFIntro\WPFIntro\obj\Debug\Window1.baml
+C:\Users\Laurence\Desktop\WebNextBook\Part02\Chapter08\WPFIntro\WPFIntro\obj\Debug\Window1.g.cs
+C:\Users\Laurence\Desktop\WebNextBook\Part02\Chapter08\WPFIntro\WPFIntro\obj\Debug\App.g.cs
+C:\Users\Laurence\Desktop\WebNextBook\Part02\Chapter08\WPFIntro\WPFIntro\obj\Debug\WPFIntro_MarkupCompile.cache
+obj\Debug\WPFIntro.g.resources
+obj\Debug\WPFIntro.Properties.Resources.resources
+obj\Debug\WPFIntro.csproj.GenerateResource.Cache
+obj\Debug\WPFIntro.exe
+obj\Debug\WPFIntro.pdb

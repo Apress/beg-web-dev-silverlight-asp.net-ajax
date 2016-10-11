@@ -1,0 +1,6 @@
+.\bin\Debug\SecondWorkflowApp.exe
+.\bin\Debug\SecondWorkflowApp.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\SecondWorkflowApp.Workflow1.rules
+obj\Debug\SecondWorkflowApp.exe
+obj\Debug\SecondWorkflowApp.pdb

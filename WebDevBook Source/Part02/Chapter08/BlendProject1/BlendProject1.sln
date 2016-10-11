@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlendProject1", "BlendProject1.csproj", "{E0C38DD4-A3D7-4DF2-81D3-4C1F3B11A41F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0C38DD4-A3D7-4DF2-81D3-4C1F3B11A41F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0C38DD4-A3D7-4DF2-81D3-4C1F3B11A41F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

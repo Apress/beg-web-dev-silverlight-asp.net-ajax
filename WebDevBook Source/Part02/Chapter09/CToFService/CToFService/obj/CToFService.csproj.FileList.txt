@@ -1,0 +1,5 @@
+.\bin\Debug\CToFService.dll
+.\bin\Debug\CToFService.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CToFService.dll
+obj\Debug\CToFService.pdb

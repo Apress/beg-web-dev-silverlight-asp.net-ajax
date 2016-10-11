@@ -1,0 +1,1 @@
+<%@WebService Class="WFLibrary.WFAsWS_WebService" %>

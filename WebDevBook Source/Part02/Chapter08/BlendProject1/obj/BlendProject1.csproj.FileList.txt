@@ -1,0 +1,15 @@
+bin\Debug\BlendProject1.exe
+bin\Debug\BlendProject1.pdb
+obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Laurence\Desktop\WebNextBook\Part02\Chapter08\BlendProject1\obj\Debug\Window1.baml
+C:\Users\Laurence\Desktop\WebNextBook\Part02\Chapter08\BlendProject1\obj\Debug\Window1.g.cs
+C:\Users\Laurence\Desktop\WebNextBook\Part02\Chapter08\BlendProject1\obj\Debug\App.g.cs
+C:\Users\Laurence\Desktop\WebNextBook\Part02\Chapter08\BlendProject1\obj\Debug\BlendProject1_MarkupCompile.cache
+obj\Debug\BlendProject1.g.resources
+obj\Debug\BlendProject1.exe
+obj\Debug\BlendProject1.pdb
+bin\Debug\BlendProject1.exe.config
+C:\Users\Laurence\Desktop\WebNextBook\Part02\Chapter08\BlendProject1\obj\Debug\Window2.baml
+C:\Users\Laurence\Desktop\WebNextBook\Part02\Chapter08\BlendProject1\obj\Debug\Window2.g.cs
+C:\Users\Laurence\Desktop\WebNextBook\Part02\Chapter08\BlendProject1\obj\Debug\GetAddresses.baml
+C:\Users\Laurence\Desktop\WebNextBook\Part02\Chapter08\BlendProject1\obj\Debug\GetAddresses.g.cs

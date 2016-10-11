@@ -1,0 +1,5 @@
+.\bin\Debug\WFLibrary.dll
+.\bin\Debug\WFLibrary.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\WFLibrary.dll
+obj\Debug\WFLibrary.pdb
